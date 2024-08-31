@@ -17,7 +17,6 @@ a {
 body {
     font-family: "Be Vietnam Pro", sans-serif;
     font-style: normal;
-    padding-top: 20px;
     padding-bottom: 82px;
     background-image: url('../images/bg-image.svg');
     background-size: cover; /* <------ */
@@ -36,8 +35,8 @@ header {
     align-items: center;
     justify-content: start;
     width: 100%;
-    margin-bottom: 44px;
-    padding: 20px 72px;
+
+    padding: 20px 72px 44px;
     max-width: unset;
 }
 
@@ -160,7 +159,7 @@ main {
 
     header {
         max-width: 592px;
-        padding: 24px 0;
+        padding: 24px 0 40px;
     }
 
     .contact-form {
@@ -191,7 +190,7 @@ main {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     header {
         max-width: 960px;
-        padding: 24px 0;
+        padding: 24px 0 20px;
     }
 
     .title {
