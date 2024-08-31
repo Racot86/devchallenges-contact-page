@@ -2,45 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Responsive Web Developer Starter - devchallenges.io</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Responsive Web Developer - Contact Page</title>
+    <link href="images/favicon.ico" rel="icon" sizes="any" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="get-started">Get started by editting <b>index.html</b></div>
-        <img class="logo" src="images/logo.svg" alt="Main Logo">
-    </header>
+<header>
+    <img alt="Becv logo" src="./images/contact-form-icon.svg"/>
+</header>
 
-    <main>
-        <img src="images/devchallenges-logo.svg" alt="A beautiful landscape">
-        <h3 class="title">Responsive Web Developer Starter</h3>
-    </main>
+<main>
+    <h1 class="title">Interested in our business pricing?</h1>
+    <h3 class="title-context">Fill out the form to view details and we’ll contact you as soon as possible.</h3>
+    <div class="contact-form">
+        <div class="row">
+            <label class="block-label" for='name'>
+                Name
+                <input class="contact-form-input" id="name" placeholder="Ethan Johnson"/>
+            </label>
 
-    <footer>
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Challenges</div>
-            <div class="link-description">Choose a challenge and start learning by building real-life projects.</div>
-        </a>
+            <label class="block-label" for="company-email">
+                Company Email
+                <input class="contact-form-input" id="company-email" placeholder="ethan@johnson.com"/>
+            </label>
+        </div>
+        <div class="row">
+            <label class="block-label" for='company-size'>
+                Company Size
+                <select class="contact-form-select" id="company-size">
+                    <option>50-100 employees</option>
+                </select>
+            </label>
 
-        <a class="link-card" href="https://devchallenges.io/challenges" target="_blank">
-            <div class="link-title">Solutions</div>
-            <div class="link-description">Checkout how orders solve the challenges, compare with yours and give them feedback.</div>
-        </a>
+            <label class="block-label" for="subject">
+                Subject
+                <select class="contact-form-select" id="subject">
+                    <option>Building Landing pages</option>
+                </select>
+            </label>
+        </div>
+        <div class="row full-width">
+            <label class="block-label full-width" for='message'>
+                Message
+                <textarea aria-multiline="true" class="contact-form-textarea full-width" id="message"
+                          placeholder="Ethan Johnson">50-100 employees</textarea>
+            </label>
+        </div>
+        <button class="contact-form-button" type="submit">Contact Sales</button>
+    </div>
+</main>
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Blogs</div>
-            <div class="link-description">Checkout devchallenges blogs, tutorials, updates. Find useful resources to get you started.</div>
-        </a>
-
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Deploy</div>
-            <div class="link-description">How to deploy and submit your solution.</div>
-        </a>
-       
-    </footer>
-
-    <script src="script.js"></script>
+<footer>
+</footer>
 </body>
 </html>
